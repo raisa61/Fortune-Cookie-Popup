@@ -10,7 +10,11 @@ function App() {
 
   const [fortune, setFortune] = useState("");
 
-  const clickHandler = () => {
+  const clickHandler = (e) => {
+    e.target.setAttribute(
+      "src",
+      "https://i.ibb.co/cksx7kr/kisspng-fortune-cookie-drawing-clip-art-fortune-cookie-5b237469209879-9079770415290502171335.png"
+    );
     const fortuneLength = fortuneMessages.length;
     setFortune(fortuneMessages[Math.floor(Math.random() * fortuneLength)]);
   };
