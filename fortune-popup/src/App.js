@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const fortuneMessages = [
@@ -15,8 +16,12 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Hi</h1>
-      <button onClick={clickHandler}>click me</button>
+      <button onClick={clickHandler}>
+        <img
+          className="cookie"
+          src="https://i.ibb.co/9YQV2qq/kisspng-fortune-cookie-biscuits-bakery-drawing-clip-art-fortune-cookies-5b0ec5e3013c23-3980054715276.png"
+        />
+      </button>
       <div>{fortune}</div>
     </div>
   );

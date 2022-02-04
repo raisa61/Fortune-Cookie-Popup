@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  margin-top: 15%;
+}
+.cookie {
+  width: 30%;
+  height: 50%;
+  cursor: pointer;
+}
+button {
+  background-color: white;
+  border-style: none;
+}
