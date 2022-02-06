@@ -14,9 +14,7 @@ function App() {
       .then((res) => {
         console.log(res.data); //logging it into the console to check if correct data is being pulled
         const fortuneLength = res.data.length; //grabbing the length of the array
-        //console.log(fortuneLength);
-
-        setFortune(res.data[Math.floor(Math.random() * fortuneLength)]);
+        setFortune(res.data[Math.floor(Math.random() * fortuneLength)]); //grabbing a random message
       })
       .catch((err) => {
         console.log(err);
@@ -36,6 +34,9 @@ function App() {
 
   return (
     <div className="App">
+      <h3 style={{ visibility: clicked ? "hidden" : "visible" }}>
+        Try a fortune cookie!
+      </h3>
       <button onClick={clickHandler}>
         <img
           className="cookie"
